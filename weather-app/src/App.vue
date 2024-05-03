@@ -1,30 +1,33 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="weather">
+    <div class="container">
+
+      <div class="card weather-form">
+        <input type="text" class="weather-form_input" placeholder="enter city"> 
+        <button class="weather-form_btn">Search</button>
+      </div>
+
+      <div class="weather-info">
+        <div class="weather-info_text">
+          <p class="card">Phuket</p>
+          <p class="card">29C</p>
+          <p class="card">Sunny</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="weather-bg">
+      <div>
+        <img class="weather-bg_img bg" src="./assets/moon.jpg" alt="App Background">
+        <img class="weather-bg overcast" src="./assets/overcast.jpg" alt="Overcast">
+        <img class="weather-bg partly-cloudy" src="./assets/partly-cloudy.jpg" alt="Partly-cloudy">
+        <img class="weather-bg sunny" src="./assets/sunny.jpg" alt="Sunny">
+      </div>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script>
+
+</script>
